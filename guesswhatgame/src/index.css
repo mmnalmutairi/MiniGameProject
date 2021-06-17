@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url("Background.jpg");
   background-size:contain;
-  height: 1600px;
+  height: 800px;
 }
 
 code {
