@@ -1,31 +1,33 @@
 import React, { useState } from 'react';
 import { Box, Hintbrief, HintWord, Attempt } from './Styles';
-import Winner from './Winner';
 import randomMovies from './GuessWord';
 import GuessBar from './GuessBar';
+// import PopUp from './PopUp';
+
 
 
 let randomItem = randomMovies[Math.floor(Math.random() * randomMovies.length)];
 let SelectedMovie = randomItem.Movie;
-
-
-
 const Game = (props) => {
 
     const [GamerInput, setGameInput] = useState("");
     const [NumberOfAttempt, setNumberOfAttempt] = useState(4);
+    // const [isOpen, setIsOpen] = useState(false);
+
+    // const togglePopup = () => {
+    //     setIsOpen(!isOpen);
+    // }
+
     const Matched = (answer) => {
 
         if (answer === SelectedMovie) {
-            console.log("YOU WIN")
-            Winner();
+            return alert("YOU WON")
 
         } else {
-            if (NumberOfAttempt === 0) {
-                console.log("YOU LOSE")
+            if (NumberOfAttempt - 1 === 0) {
+                return alert("YOU LOSE")
             } else {
-                setNumberOfAttempt(NumberOfAttempt - 1);
-                console.log("Number Of Attempts Should be ", NumberOfAttempt);
+                return setNumberOfAttempt(NumberOfAttempt - 1);
             }
         }
     }
