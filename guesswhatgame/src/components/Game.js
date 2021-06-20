@@ -46,6 +46,7 @@ const Game = (props) => {
                 <button className="button" onClick={() => Matched(GamerInput)}><h1 className="InButton">Launch</h1></button>
             </div>
         </Box>
+
     );
 
 };
