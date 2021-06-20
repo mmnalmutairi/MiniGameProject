@@ -94,7 +94,7 @@ h2:hover span:nth-child(3) {
   margin-right: 7px;
 }
 
-h2:hover span{
+h2 span{
   color: rgb(255, 251, 0);
   text-shadow: 0 0 10px rgb(255, 251, 0),
   0 0 10px rgb(255, 251, 0),

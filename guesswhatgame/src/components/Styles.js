@@ -60,8 +60,3 @@ color: white;
 font-family: "Lucida Console", "Courier New", monospace;
 padding-top: 20px;
 `;
-
-
-export const Winner = styled.img`
-
-`;
